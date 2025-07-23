@@ -1,17 +1,17 @@
-# 🎓 CEMS - Campus Event Management System (Backend)
+ CEMS - Campus Event Management System (Backend)
 
 This is the backend server for **CEMS**, a Campus Event Management System built with Node.js, Express, and MongoDB. It powers the core functionalities of student event registrations, admin event creation, user authentication, and participant management.
 
-## 🚀 Features
+ Features
 
-- ✅ User & Admin login/signup with JWT-based authentication
-- 🎫 Event creation with date, deadline, and participant limits
-- 🧑‍🎓 Student registration to events with validations (deadline, full event, duplicates)
-- 📋 Admin can update/delete events and view participants
-- 🔍 Search, filter, and pagination of events
-- 🍪 HttpOnly secure cookies for login sessions
+-  User & Admin login/signup with JWT-based authentication
+-  Event creation with date, deadline, and participant limits
+-  Student registration to events with validations (deadline, full event, duplicates)
+-  Admin can update/delete events and view participants
+-  Search, filter, and pagination of events
+-  HttpOnly secure cookies for login sessions
 
-## 🛠️ Tech Stack
+Tech Stack
 
 - Node.js
 - Express.js
@@ -22,7 +22,7 @@ This is the backend server for **CEMS**, a Campus Event Management System built 
 - CORS
 - cookie-parser
 
-## 🗂️ Folder Structure
+Folder Structure
 
 backend/
 │
@@ -37,7 +37,7 @@ backend/
 └── README.md
 
 
-## 📦 Getting Started
+Getting Started
 
 1. Clone the repository
 
@@ -56,14 +56,14 @@ PORT=5000
 npm run dev
 Server runs at: http://localhost:5000
 
-🔐 Authentication
+Authentication
 Login/signup returns a JWT cookie stored securely via httpOnly.
 
 Authenticated routes use protectRoute middleware.
 
 Admin routes use additional isAdmin middleware.
 
-🔗 API Routes
+API Routes
 Auth Routes
 Method	Endpoint	Description
 POST	/api/auth/signup	Create new user/admin
@@ -82,7 +82,7 @@ PUT	/api/events/update/:eventId	Update event (admin only)
 DELETE	/api/events/delete/:eventId	Delete event (admin only)
 GET	/api/events/participants/:eventId	View event participants (admin only)
 
-📝 License
+License
 This project is licensed under the MIT License.
 Feel free to contribute, fork, or use it for your campus projects!
 
